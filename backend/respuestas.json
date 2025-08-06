@@ -1,32 +1,29 @@
 [
   {
-    "operador": "juan",
-    "score": 4,
-    "comentario": "me gusto",
-    "fecha": "2025-07-14T21:39:50.762Z"
-  },
-  {
-    "operador": "juan",
-    "score": 6,
-    "comentario": "",
-    "fecha": "2025-07-14T21:39:54.720Z"
-  },
-  {
-    "operador": "juan",
+    "operador": "Juan",
     "score": 10,
-    "comentario": "genial",
-    "fecha": "2025-07-14T21:40:00.641Z"
+    "comentario": "Me encanto el trato",
+    "nombre_cliente": "Roberto Carlos",
+    "email_cliente": "roberto@gmail.com",
+    "sector": "Kavak",
+    "fecha": "2025-08-06T17:53:35.805Z"
   },
   {
-    "operador": "juan",
-    "score": 6,
-    "comentario": "",
-    "fecha": "2025-08-06T16:31:00.045Z"
+    "operador": "Juan",
+    "score": 0,
+    "comentario": "no me gusto nada",
+    "nombre_cliente": "pepito",
+    "email_cliente": "pepito@gmail.com",
+    "sector": "Kavak",
+    "fecha": "2025-08-06T17:55:04.087Z"
   },
   {
-    "operador": "juan",
+    "operador": "Juan",
     "score": 10,
-    "comentario": "",
-    "fecha": "2025-08-06T16:31:57.154Z"
+    "comentario": "Estuvo bien",
+    "nombre_cliente": "carlos",
+    "email_cliente": "pepito@gmail.com",
+    "sector": "Kavak",
+    "fecha": "2025-08-06T17:55:27.374Z"
   }
 ]

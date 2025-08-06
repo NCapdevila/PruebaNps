@@ -4,12 +4,12 @@ function GeneradorLinks() {
   const [nombre, setNombre] = useState('');
   const [email, setEmail] = useState('');
   const [operador, setOperador] = useState('');
-  const [servicio, setServicio] = useState('');
+  const [sector, setSector] = useState('');
   const [link, setLink] = useState('');
   const [cargando, setCargando] = useState(false);
 
   const generarLink = async () => {
-    if (!nombre || !email || !operador || !servicio) {
+    if (!nombre || !email || !operador || !sector) {
       alert("Completá todos los campos");
       return;
     }
@@ -21,7 +21,7 @@ function GeneradorLinks() {
       const res = await fetch('http://localhost:3001/api/encuestas/enviar', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ nombre, email, operador, servicio })
+        body: JSON.stringify({ nombre, email, operador, sector })
       });
 
       const data = await res.json();
@@ -47,7 +47,7 @@ function GeneradorLinks() {
       <input type="text" placeholder="Nombre cliente" value={nombre} onChange={e => setNombre(e.target.value)} />
       <input type="email" placeholder="Email cliente" value={email} onChange={e => setEmail(e.target.value)} />
       <input type="text" placeholder="Operador" value={operador} onChange={e => setOperador(e.target.value)} />
-      <input type="text" placeholder="Servicio / Sector" value={servicio} onChange={e => setServicio(e.target.value)} />
+      <input type="text" placeholder="Sector" value={sector} onChange={e => setSector(e.target.value)} />
 
       <button onClick={generarLink} disabled={cargando}>
         {cargando ? 'Generando...' : 'Generar link'}
